@@ -10,6 +10,7 @@ public class ultimatePointnClickPack : MonoBehaviour
     public DialogueManager dialogueManager;
     public Dialogue dialogue;
     public GameObject nametag;
+    public ParameterHolder parameterHolder;
 
     public void OnPointerEnter(PointerEventData eventData){
         nametag.SetActive(true);
@@ -25,6 +26,14 @@ public class ultimatePointnClickPack : MonoBehaviour
   public void revealItem(bool isActive){
     objectThatActivatesOrDeactivates.SetActive(isActive);
   }
+
+ 
+    public void getOut(){
+        if (parameterHolder.Key1 && parameterHolder.Key2 && parameterHolder.Key3){
+            Debug.Log("Rawr xd");
+
+        }
+    }
 
 
 }
