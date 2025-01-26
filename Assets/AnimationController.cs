@@ -16,7 +16,7 @@ public class AnimationController : MonoBehaviour
     {
         
           // Check if any key is currently being pressed
-        if (Input.anyKey)
+        if (Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.S)||Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.LeftArrow))
         {
             if (animator != null){
             if (animator.speed != 1){
