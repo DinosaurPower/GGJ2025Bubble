@@ -41,9 +41,9 @@ public class PlayerController2D : MonoBehaviour
 
         // Handle sprite flipping (optional)
         if (horizontalInput > 0)
-            spriteRenderer.flipX = false;
-        else if (horizontalInput < 0)
             spriteRenderer.flipX = true;
+        else if (horizontalInput < 0)
+            spriteRenderer.flipX = false;
 
         // Update Animator if you want to show running animation
         // e.g. animator.SetBool("isRunning", horizontalInput != 0);

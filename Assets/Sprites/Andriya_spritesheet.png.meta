@@ -1,0 +1,1271 @@
+fileFormatVersion: 2
+guid: ad4b748a282d241d1ae2f3aa7c2970dc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Andriya_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 265
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477949c1ce2ac4b3f8c1487d3128bba9
+      internalID: -638887896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 502
+        width: 268
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f939f0a907441bda055278d61a7f9b
+      internalID: -1513356993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 498
+        width: 269
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bae98007912140ff9332f804de62119
+      internalID: 1605459132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 502
+        width: 267
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419494e16d4a74d16af9b4977e78b149
+      internalID: 837055355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 498
+        width: 268
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3ad07287cd841f3a903bfccd5c3ef2
+      internalID: -1414089907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 498
+        width: 268
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c81b23fc24b47fb95413c9de678a25
+      internalID: -59735386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 502
+        width: 271
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815fee1d52a4a46f0b114fd03016afe1
+      internalID: -906475722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2505
+        y: 502
+        width: 270
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9961690034fa46f4a6832754308ca5c
+      internalID: -632381463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 494
+        width: 272
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc15f362730641f6a6cddd7b15dc54d
+      internalID: 660374848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 498
+        width: 272
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47695e4bb10c2476dbc22637af45e1b8
+      internalID: -1020467316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 498
+        width: 272
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c497277eb607849848ca2d3d14b151fd
+      internalID: 502041794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3849
+        y: 498
+        width: 277
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c929089d0b7304c9a8d0a6f6797ec185
+      internalID: -1152322951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 494
+        width: 277
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3381c3f1bfe8a4e0f80b61c1866a83dd
+      internalID: -184092097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 489
+        width: 280
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8345419cbdd5f407aa0abeaea01bbf47
+      internalID: 1166046755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 4871
+        y: 498
+        width: 277
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2bed49ae56e4bdaa6cbae8bc4c3383
+      internalID: 699724984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 5200
+        y: 498
+        width: 277
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda614cd7288c483a9015b85d41f1a7d
+      internalID: -1009554537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 5534
+        y: 498
+        width: 281
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f8ef451a0b7427685bcf9ff61857bd
+      internalID: 1875740527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 494
+        width: 283
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c17d69f717c4f00850c2fa1bb10412
+      internalID: 1138756925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 6223
+        y: 494
+        width: 280
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51fe0faca05b43f7b1834bc89a2e535
+      internalID: -1666150587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 6538
+        y: 489
+        width: 281
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d30ffe8d98447b69b11ee9d9785c53
+      internalID: 678879054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 6885
+        y: 496
+        width: 284
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c067ff20e839a443d88b263f790086c8
+      internalID: 1498501420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 7232
+        y: 494
+        width: 285
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fa188134b2645ca870fed494410470
+      internalID: -1720316469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 7565
+        y: 494
+        width: 285
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14510fe4d2bb47eca14b9a1b8d98056
+      internalID: -1477232401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 7898
+        y: 498
+        width: 285
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c71392235a64765b8de1d63de44fab
+      internalID: 1767364041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 8245
+        y: 494
+        width: 285
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55f3d741f83944a580c1edc520112c6
+      internalID: 1483310802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 8618
+        y: 503
+        width: 288
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8eff62fa5534ba3b6e8a508677f202
+      internalID: 1502873447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 285
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8b0e63295de447d8ead83bdd155af8
+      internalID: 656198249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 285
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0438cbde07446bf9d9ce5a6bb4a093
+      internalID: 1520155555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2
+        width: 281
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbcfb915232c48ddaa399bfb8eeb96e
+      internalID: -1951577537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 7
+        width: 281
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca326d4afd1d14158acf26f14faf0d96
+      internalID: -1628925161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 2
+        width: 280
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa950dc13f5c64f319136ec4d7e667d2
+      internalID: 401111600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 2
+        width: 280
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c54a0833711b4cd6b76fb39b33d1398
+      internalID: 1938718232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 2
+        width: 277
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f16e4b3b86e4cc2b3bd26124b6e69f
+      internalID: 2135795954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 7
+        width: 278
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9061be87add364f27908c47a5cd49d83
+      internalID: -211080159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 3
+        width: 276
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18396996dcadb49e98942112edfbc18c
+      internalID: -1239996437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 2
+        width: 276
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee18461602f6445a698c89366030518b
+      internalID: -1103080178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 3512
+        y: 7
+        width: 276
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6eeaa7eec544c978d4a0d5eb39b0d9
+      internalID: -785854695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 3873
+        y: 7
+        width: 275
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98db1c0d1c8b413b84886677f88a9c1
+      internalID: -1685600274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 4222
+        y: 2
+        width: 272
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecaf7176fc89942aaa6394137d78525d
+      internalID: 1959558228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 4547
+        y: 0
+        width: 272
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6886aad9c3340d1b380d96bf6da2e9
+      internalID: -583265507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 4902
+        y: 2
+        width: 272
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7bfdbb1848240b39f7195d44cc92d6
+      internalID: 742612141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 5231
+        y: 2
+        width: 268
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1b1d07f74924160a59c2a281c0f377
+      internalID: -1188229763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 5569
+        y: 7
+        width: 272
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4035a3a9db940518d2f3da6fdd431d
+      internalID: -525065566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 5903
+        y: 2
+        width: 271
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21620ee21e0d490ebf1aa52cfcefc81
+      internalID: -676591865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 6231
+        y: 2
+        width: 268
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66a6c70b992446c5a73d41e2daa0d72
+      internalID: 1803562578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 6543
+        y: 2
+        width: 271
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f5797fdd44c413ca9720c17998a974
+      internalID: -928631665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 6863
+        y: 2
+        width: 270
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8629759e65c423f8fc6d299178caa9
+      internalID: -462680955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 7188
+        y: 2
+        width: 271
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0f72e2ec5ae40528da0228c5263a4e
+      internalID: -1062840967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 7509
+        y: 2
+        width: 271
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccffbba1dca04e9f866d8ff61e9eee4
+      internalID: 1793425791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 7903
+        y: 0
+        width: 272
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184c280d530b543689558ebd8caa149f
+      internalID: 1574827144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 8267
+        y: 2
+        width: 267
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb58f5a604c1349bbb70d49e0c9d2b13
+      internalID: -1333946308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Andriya_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 8635
+        y: 2
+        width: 268
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b994dd1af09415492d88cc5d523be8
+      internalID: 975129582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Andriya_spritesheet_0: -638887896
+      Andriya_spritesheet_1: -1513356993
+      Andriya_spritesheet_10: 502041794
+      Andriya_spritesheet_11: -1152322951
+      Andriya_spritesheet_12: -184092097
+      Andriya_spritesheet_13: 1166046755
+      Andriya_spritesheet_14: 699724984
+      Andriya_spritesheet_15: -1009554537
+      Andriya_spritesheet_16: 1875740527
+      Andriya_spritesheet_17: 1138756925
+      Andriya_spritesheet_18: -1666150587
+      Andriya_spritesheet_19: 678879054
+      Andriya_spritesheet_2: 1605459132
+      Andriya_spritesheet_20: 1498501420
+      Andriya_spritesheet_21: -1720316469
+      Andriya_spritesheet_22: -1477232401
+      Andriya_spritesheet_23: 1767364041
+      Andriya_spritesheet_24: 1483310802
+      Andriya_spritesheet_25: 1502873447
+      Andriya_spritesheet_26: 656198249
+      Andriya_spritesheet_27: 1520155555
+      Andriya_spritesheet_28: -1951577537
+      Andriya_spritesheet_29: -1628925161
+      Andriya_spritesheet_3: 837055355
+      Andriya_spritesheet_30: 401111600
+      Andriya_spritesheet_31: 1938718232
+      Andriya_spritesheet_32: 2135795954
+      Andriya_spritesheet_33: -211080159
+      Andriya_spritesheet_34: -1239996437
+      Andriya_spritesheet_35: -1103080178
+      Andriya_spritesheet_36: -785854695
+      Andriya_spritesheet_37: -1685600274
+      Andriya_spritesheet_38: 1959558228
+      Andriya_spritesheet_39: -583265507
+      Andriya_spritesheet_4: -1414089907
+      Andriya_spritesheet_40: 742612141
+      Andriya_spritesheet_41: -1188229763
+      Andriya_spritesheet_42: -525065566
+      Andriya_spritesheet_43: -676591865
+      Andriya_spritesheet_44: 1803562578
+      Andriya_spritesheet_45: -928631665
+      Andriya_spritesheet_46: -462680955
+      Andriya_spritesheet_47: -1062840967
+      Andriya_spritesheet_48: 1793425791
+      Andriya_spritesheet_49: 1574827144
+      Andriya_spritesheet_5: -59735386
+      Andriya_spritesheet_50: -1333946308
+      Andriya_spritesheet_51: 975129582
+      Andriya_spritesheet_6: -906475722
+      Andriya_spritesheet_7: -632381463
+      Andriya_spritesheet_8: 660374848
+      Andriya_spritesheet_9: -1020467316
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
