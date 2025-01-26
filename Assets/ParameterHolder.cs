@@ -6,5 +6,9 @@ public class ParameterHolder : MonoBehaviour
 {
 
     public bool Hidden = false;
+
+    void Update(){
+      
+    }
     
 }

@@ -21,10 +21,11 @@ public class SceneSwitch : MonoBehaviour
     }
     void OnTriggerEnter2D (Collider2D other){
         if (other.gameObject.CompareTag("Player")){
+            Debug.Log("Player");
         sceneUpdateHolder.updateScenes(orderDirection);
         other.gameObject.transform.position = new Vector3(PlayerPosition, other.gameObject.transform.position.y, other.gameObject.transform.position.z);
 
-
     }
+   
     }
 }

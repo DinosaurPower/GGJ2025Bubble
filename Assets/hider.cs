@@ -20,9 +20,9 @@ public class hider : MonoBehaviour
         // Check if 'H' key is pressed
         if (Input.GetKeyDown(KeyCode.H))
         {
+            Debug.Log("Hide");
             // Hide the sprite
             playerCharacter.GetComponent<SpriteRenderer>().enabled = false;
-            Debug.Log("Hide");
             playerCharacter.GetComponent<ParameterHolder>().Hidden = true;
         }
         else if (Input.anyKeyDown)
