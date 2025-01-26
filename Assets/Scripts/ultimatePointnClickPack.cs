@@ -7,11 +7,16 @@ public class ultimatePointnClickPack : MonoBehaviour
 {
 
     public GameObject objectThatActivatesOrDeactivates;
-    public DialogueManager dialogueManager;
+    public DialogueManager dialogueManager = DialogueManager.Instance;
     public Dialogue dialogue;
     public Dialogue inactiveDialogue;
     public GameObject nametag;
     public ParameterHolder parameterHolder;
+
+    public void Start()
+    {
+      dialogueManager = DialogueManager.Instance;
+    }
 
     public void OnPointerEnter(PointerEventData eventData){
         nametag.SetActive(true);
