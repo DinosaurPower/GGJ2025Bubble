@@ -1,28 +1,32 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class BetGame : MonoBehaviour
 {
     [Header("References")]
     public CardUIManager cardUIManager; // Drag in from inspector
+    public GameObject scoreIndicatorObject;
+    public GameObject Canvas;
 
     private List<int> playerHand;
     private List<int> computerHand;
     private List<int> treasures;
+
+
 
     private int playerScore;
     private int computerScore;
     private int currentRound;
     private bool waitingForPlayerChoice;
 
+
     [Header("UI")]
     public TextMeshProUGUI scoreCardsText;
     public TextMeshProUGUI enemyCardValueText;
     public TextMeshProUGUI playerPointText;
     public TextMeshProUGUI enemyPointText;
-
 
     void Start()
     {
@@ -54,9 +58,7 @@ public class BetGame : MonoBehaviour
         }
 
         Debug.Log($"Round {currentRound + 1} - Treasure worth {treasures[currentRound]} points!");
-        scoreCardsText.text = "" + treasures[currentRound];
-        //Debug.Log("Player Hand: " + string.Join(", ", playerHand));
-        //Debug.Log("Computer Hand: " + string.Join(", ", computerHand));
+        scoreCardsText.text = treasures[currentRound].ToString();
 
         waitingForPlayerChoice = true;
     }
@@ -84,26 +86,41 @@ public class BetGame : MonoBehaviour
         // Remove from player's hand
         playerHand.Remove(chosenCard);
 
-        // Discard from UI
-        cardUIManager.DiscardCard(chosenCard);
-
         // Computer picks a card
         int computerCard = ComputerPickCard();
         computerHand.Remove(computerCard);
-        enemyCardValueText.text = "" + computerCard;
+
+        enemyCardValueText.text = computerCard.ToString();
 
         Debug.Log($"Player chose card: {chosenCard}");
         Debug.Log($"Computer chose card: {computerCard}");
 
-        // Compare
-        if (chosenCard > computerCard)
+        // Start a coroutine to handle animations + fade to black, then continue game
+        StartCoroutine(OnCardChosenRoutine(chosenCard, computerCard));
+    }
+
+    private IEnumerator OnCardChosenRoutine(int playerCard, int computerCard)
+    {
+        // 1) Animate the player's chosen card to some position
+        Vector2 playerTargetPos = new Vector2(-24f, 470f);
+        yield return StartCoroutine(
+            cardUIManager.AnimateCardToPosition(playerCard, playerTargetPos, .5f)
+        );
+
+        yield return new WaitForSeconds(.6f);
+
+        // 3) Determine the winner for this round
+        bool playerWins = false;
+        if (playerCard > computerCard)
         {
             playerScore += treasures[currentRound];
+            playerWins = true;
             Debug.Log($"Player wins {treasures[currentRound]} points!");
         }
-        else if (computerCard > chosenCard)
+        else if (computerCard > playerCard)
         {
             computerScore += treasures[currentRound];
+            playerWins = false;
             Debug.Log($"Computer wins {treasures[currentRound]} points!");
         }
         else
@@ -111,17 +128,64 @@ public class BetGame : MonoBehaviour
             Debug.Log("Tie! No one gets points this round.");
         }
 
-        Debug.Log($"Scores -> Player: {playerScore}, Computer: {computerScore}");
-        playerPointText.text = "Your Point:" + playerScore;
-        enemyPointText.text = "Their Point:" + computerScore;
 
+        // 4) Fade the *loser’s* card to black (or both, if tie, etc.)
+        //    We'll wait for 3 seconds, then discard them.
+
+        int loserCard = (playerWins) ? computerCard : playerCard;
+        if (playerCard == computerCard)
+        {
+            // If tie, you could handle differently, or fade none, or fade both.
+            // We'll just fade none for a tie.
+            loserCard = -1;
+        }
+
+
+
+        // 5) If there's a loser card, fade it to black
+        if (loserCard != -1)
+        {
+            GameObject scoreIndicatorInstance = Instantiate(scoreIndicatorObject, Canvas.transform);
+            if (!playerWins)
+            {
+                yield return StartCoroutine(cardUIManager.FadeCardToBlack(playerCard, 1f));
+                yield return StartCoroutine(cardUIManager.AnimateObjectToPosition(scoreIndicatorInstance, enemyPointText.rectTransform.anchoredPosition, .5f));
+            }
+            else
+            {
+                yield return StartCoroutine(cardUIManager.FadeEnemyCardToBlack(1f));
+                yield return StartCoroutine(cardUIManager.AnimateObjectToPosition(scoreIndicatorInstance, playerPointText.rectTransform.anchoredPosition, .5f));
+            }
+            DestroyImmediate(scoreIndicatorInstance, true);
+        }
+
+        // 6) Wait 3 seconds with the black card shown
+         
+         
+         yield return new WaitForSeconds(.4f);
+
+        //now display the differnet color
+
+        Debug.Log($"Scores -> Player: {playerScore}, Computer: {computerScore}");
+        playerPointText.text = "Your Point: " + playerScore;
+        enemyPointText.text = "Their Point: " + computerScore;
+
+        // 7) Now discard BOTH cards from the UI manager
+
+        cardUIManager.DiscardCardImmediate(playerCard);
+
+        // Turn the enemy card text back to hidden
+        cardUIManager.returnEnemyCardToWhite();
+        enemyCardValueText.text = "";
+
+        // Move to the next round
         currentRound++;
         StartNewRound();
     }
 
     private int ComputerPickCard()
     {
-        // Simple random pick from the computer hand
+        // Simple random pick
         int index = Random.Range(0, computerHand.Count);
         return computerHand[index];
     }
