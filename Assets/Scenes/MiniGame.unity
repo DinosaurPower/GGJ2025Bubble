@@ -176,10 +176,12 @@ MonoBehaviour:
     lines:
     - OMG You actually won aginst that *&(@#)
     - You got most of M)@&#E back!
+    characterImage: {fileID: 0}
   dialoguesLosing:
     lines:
     - You lost? Well...
     - Thats at least some part back i guess. RUNNN
+    characterImage: {fileID: 0}
   scoreCardsText: {fileID: 778159737}
   enemyCardValueText: {fileID: 2130623845}
   playerPointText: {fileID: 599795345}
@@ -418,8 +420,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Your Point:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fbbf15ed7a676428188a5f654e9c5217, type: 2}
+  m_sharedMaterial: {fileID: 9163526421581857565, guid: fbbf15ed7a676428188a5f654e9c5217, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1403,6 +1405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1318025348}
   dialogueText: {fileID: 1264394330}
+  characterImageUI: {fileID: 0}
   typingSpeed: 0.05
   proceedKey: 32
 --- !u!224 &1798033976
@@ -1507,8 +1510,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Their Point
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fbbf15ed7a676428188a5f654e9c5217, type: 2}
+  m_sharedMaterial: {fileID: 9163526421581857565, guid: fbbf15ed7a676428188a5f654e9c5217, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
