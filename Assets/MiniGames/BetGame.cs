@@ -14,7 +14,8 @@ public class BetGame : MonoBehaviour
     private List<int> computerHand;
     private List<int> treasures;
 
-
+    public Dialogue dialoguesWining;
+    public Dialogue dialoguesLosing;
 
     private int playerScore;
     private int computerScore;
@@ -198,10 +199,12 @@ public class BetGame : MonoBehaviour
         if (playerScore > computerScore)
         {
             Debug.Log("Player wins the game!");
+            DialogueManager.Instance.StartDialogue(dialoguesWining);
         }
         else if (computerScore > playerScore)
         {
             Debug.Log("Computer wins the game!");
+            DialogueManager.Instance.StartDialogue(dialoguesLosing);
         }
         else
         {

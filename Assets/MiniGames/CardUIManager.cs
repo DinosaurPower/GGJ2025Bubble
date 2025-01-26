@@ -17,6 +17,7 @@ public class CardUIManager : MonoBehaviour
     public float verticalFlip = -1f;
 
 
+
     // Store all card objects (player's hand)
     private List<GameObject> cardUIList = new List<GameObject>();
 
@@ -238,4 +239,5 @@ public class CardUIManager : MonoBehaviour
         }
         return null;
     }
+
 }
