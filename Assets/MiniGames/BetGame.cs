@@ -250,7 +250,7 @@ public class BetGame : MonoBehaviour
         {
             Debug.Log("Player wins the game!");
             DialogueManager.Instance.StartDialogue(dialoguesWining, () => {
-                SceneTransition.Instance.TransitionToScene("Mask");
+                SceneTransition.Instance.TransitionToSceneMain();
 
             });
         }
@@ -258,7 +258,7 @@ public class BetGame : MonoBehaviour
         {
             Debug.Log("Computer wins the game!");
             DialogueManager.Instance.StartDialogue(dialoguesLosing, () => {
-                SceneTransition.Instance.TransitionToScene("Mask");
+                SceneTransition.Instance.TransitionToSceneMain();
 
             });
         }
@@ -266,7 +266,7 @@ public class BetGame : MonoBehaviour
         {
             Debug.Log("It's a tie!");
             DialogueManager.Instance.StartDialogue(dialoguesLosing, () => {
-                SceneTransition.Instance.TransitionToScene("Mask");
+                SceneTransition.Instance.TransitionToSceneMain();
 
             });
         }

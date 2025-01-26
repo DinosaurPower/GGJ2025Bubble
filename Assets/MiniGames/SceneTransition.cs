@@ -75,4 +75,17 @@ public class SceneTransition : MonoBehaviour
         // Ensure final alpha is set exactly
         fadeImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, endAlpha);
     }
+
+    public void TransitionToSceneMiniGame()
+    {
+        StartCoroutine(DoTransition("MiniGame"));
+    }
+
+        public void TransitionToSceneMain()
+    {
+        StartCoroutine(DoTransition("MainScene"));
+    }
+
+    
+
 }
