@@ -9,6 +9,7 @@ public class ultimatePointnClickPack : MonoBehaviour
     public GameObject objectThatActivatesOrDeactivates;
     public DialogueManager dialogueManager;
     public Dialogue dialogue;
+    public Dialogue inactiveDialogue;
     public GameObject nametag;
     public ParameterHolder parameterHolder;
 
@@ -29,9 +30,15 @@ public class ultimatePointnClickPack : MonoBehaviour
 
  
     public void getOut(){
-        if (parameterHolder.Key1 && parameterHolder.Key2 && parameterHolder.Key3){
-            Debug.Log("Rawr xd");
 
+       Debug.Log("Here");
+        if (parameterHolder.Key1 && parameterHolder.Key2 && parameterHolder.Key3){
+          revealItem(true);
+            dialogueManager.StartDialogue(dialogue);
+            Debug.Log("Bark");
+
+        } else {dialogueManager.StartDialogue(inactiveDialogue);
+        Debug.Log("Meow");
         }
     }
 
