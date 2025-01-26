@@ -433,6 +433,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &338966339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 338966340}
+  - component: {fileID: 338966342}
+  - component: {fileID: 338966341}
+  m_Layer: 0
+  m_Name: Tag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &338966340
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338966339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8582800530292604740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 395.72, y: 28.7}
+  m_SizeDelta: {x: 30, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &338966341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338966339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 344826f9d09be4b8aa3fb58b7280539c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &338966342
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338966339}
+  m_CullTransparentMesh: 1
 --- !u!1 &404664420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -311.09003, y: -126.06999}
+  m_AnchoredPosition: {x: -311.09003, y: -114.96997}
   m_SizeDelta: {x: 160, y: 65.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612566552
@@ -1041,8 +1116,10 @@ MonoBehaviour:
   dialogue:
     lines:
     - Oh, key! Couldn't see it at first..
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
   inactiveDialogue:
     lines: []
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
   nametag: {fileID: 0}
   parameterHolder: {fileID: 0}
 --- !u!114 &612566553
@@ -1610,11 +1687,65 @@ MonoBehaviour:
     lines:
     - Finally, freedom!
     - ...Oh no!
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
   inactiveDialogue:
     lines:
     - Hm, looks like it's locked....
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
   nametag: {fileID: 0}
   parameterHolder: {fileID: 3707938736127390016}
+--- !u!1 &842087403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 842087405}
+  - component: {fileID: 842087404}
+  m_Layer: 0
+  m_Name: INTRO_Outro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &842087404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842087403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db64aec28213493d8bee17a4daf1811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introDialogue:
+    lines:
+    - Yo fizz fam welcome back to my channel!
+    - Today we are doing Survive In Chicken Hut Challenge.
+    - 'Remember fam: like and subscribe if you haven''t done so yet!'
+    - And now, message from our sponsor....
+    characterImage: {fileID: 21300000, guid: 31da4b89ffecf4c189e9b3608a245c65, type: 3}
+  dialogueManager: {fileID: 8582800530292604741}
+--- !u!4 &842087405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842087403}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5587525, y: -2.3714797, z: -0.0790319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &851370015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,8 +2177,10 @@ MonoBehaviour:
   dialogueManager: {fileID: 0}
   dialogue:
     lines: []
+    characterImage: {fileID: 0}
   inactiveDialogue:
     lines: []
+    characterImage: {fileID: 0}
   nametag: {fileID: 1385907053}
   parameterHolder: {fileID: 0}
 --- !u!114 &1063998669
@@ -2898,6 +3031,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1564029586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564029587}
+  - component: {fileID: 1564029589}
+  - component: {fileID: 1564029588}
+  m_Layer: 0
+  m_Name: Pfp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1564029587
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564029586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8582800530292604740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 451.36, y: 21.13}
+  m_SizeDelta: {x: 141.28, y: 141.28}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1564029588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564029586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1564029589
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564029586}
+  m_CullTransparentMesh: 1
 --- !u!1 &1594191838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,10 +3164,18 @@ MonoBehaviour:
   dialogueManager: {fileID: 8582800530292604741}
   dialogue:
     lines:
-    - Text 1
-    - Text 2
+    - I remember making this cake with my mother...
+    - 'she told me not to touch the pan before it was cool. '
+    - I was mad she thought I needed such an obvious warning that I reached out and
+      touched the pan anyway...
+    - I was mad she thought I needed such an obvious warning that I reached out and
+      touched the pan anyway...
+    - as the skin bubbled in step with the little cakes, I remember thinking that
+      defiance bubbled in a similar way.
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
   inactiveDialogue:
     lines: []
+    characterImage: {fileID: 21300000, guid: ef282fc4c071f437fb698c5d47385198, type: 3}
   nametag: {fileID: 0}
   parameterHolder: {fileID: 0}
 --- !u!114 &1594191841
@@ -3445,8 +3661,10 @@ MonoBehaviour:
   dialogue:
     lines:
     - Hm, can the key be helpful to open the door?
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
   inactiveDialogue:
     lines: []
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
   nametag: {fileID: 0}
   parameterHolder: {fileID: 0}
 --- !u!114 &1888357661
@@ -3701,8 +3919,10 @@ MonoBehaviour:
     - You know, fam....
     - I have weird feeling in my guts fam....
     - Very weird...
+    characterImage: {fileID: 21300000, guid: 31da4b89ffecf4c189e9b3608a245c65, type: 3}
   inactiveDialogue:
     lines: []
+    characterImage: {fileID: 21300000, guid: 31da4b89ffecf4c189e9b3608a245c65, type: 3}
   nametag: {fileID: 0}
   parameterHolder: {fileID: 0}
 --- !u!114 &1922080727
@@ -4870,12 +5090,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4047628079051350010}
+  - {fileID: 1564029587}
+  - {fileID: 338966340}
   m_Father: {fileID: 502603065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 339.06, y: 43.570007}
-  m_SizeDelta: {x: 678.11, y: 95.15}
+  m_AnchoredPosition: {x: 381.84, y: 46.48999}
+  m_SizeDelta: {x: 763.67, y: 100.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8582800530292604741
 MonoBehaviour:
@@ -4891,6 +5113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 976592442004525875}
   dialogueText: {fileID: 1458769144608588274}
+  characterImageUI: {fileID: 1564029588}
   typingSpeed: 0.05
   proceedKey: 32
 --- !u!4 &8829404676765069464
@@ -4935,3 +5158,4 @@ SceneRoots:
   - {fileID: 193028875516941312}
   - {fileID: 1103322964}
   - {fileID: 1138189351}
+  - {fileID: 842087405}
