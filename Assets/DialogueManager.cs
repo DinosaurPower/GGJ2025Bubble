@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;  // Only if using TextMeshPro
 
 [System.Serializable]
@@ -8,6 +9,7 @@ public class Dialogue
 {
     [TextArea(3, 5)]
     public string[] lines; // Each element is one line of dialogue
+    public Sprite characterImage; // Assign the Image component used for displaying character sprites
 }
 
 public class DialogueManager : MonoBehaviour
@@ -36,6 +38,10 @@ public class DialogueManager : MonoBehaviour
     // If using TextMeshPro:
     public TextMeshProUGUI dialogueText;
 
+     [Header("Image Settings")]
+    public Image characterImageUI; // Assign the Image component used for displaying character sprites
+
+
     // Or, if you're using the old Text system, comment out the above and uncomment this:
     // public Text dialogueText;
 
@@ -61,6 +67,11 @@ public class DialogueManager : MonoBehaviour
         // Show the dialogue panel (make sure it's active)
         dialoguePanel.SetActive(true);
 
+        if (characterImageUI != null && dialogue.characterImage != null)
+        {
+            characterImageUI.sprite = dialogue.characterImage;
+            characterImageUI.gameObject.SetActive(true); // Ensure the image is visible
+        }
         // Reset line index and store lines
         currentLineIndex = 0;
         currentDialogueLines = dialogue.lines;
