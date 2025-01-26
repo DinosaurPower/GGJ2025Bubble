@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,12 +13,11 @@ public class Dialogue
 
 public class DialogueManager : MonoBehaviour
 {
-
     public static DialogueManager Instance { get; private set; }
 
     private void Awake()
     {
-        // If there?s already an instance and it?s not this, destroy this GameObject.
+        // If there's already an instance and it's not this, destroy this GameObject.
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -30,14 +30,10 @@ public class DialogueManager : MonoBehaviour
     }
 
     [Header("UI References")]
-    // Assign your Panel (the background for the dialogue) in the Inspector
     public GameObject dialoguePanel;
 
     // If using TextMeshPro:
     public TextMeshProUGUI dialogueText;
-
-    // Or, if you're using the old Text system, comment out the above and uncomment this:
-    // public Text dialogueText;
 
     [Header("Typing Settings")]
     [Tooltip("Time in seconds between displaying each character.")]
@@ -53,11 +49,18 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private bool isTyping;  // True if we're in the middle of typing a line
 
+    // This is the callback that we'll invoke after the dialogue finishes
+    private Action onDialogueEnd;
+
     /// <summary>
     /// Call this method to begin showing multiple lines from a Dialogue object.
+    /// The optional 'endCallback' will be invoked after all lines have been displayed.
     /// </summary>
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, Action endCallback = null)
     {
+        // Store the callback so we can invoke it when the dialogue is done
+        onDialogueEnd = endCallback;
+
         // Show the dialogue panel (make sure it's active)
         dialoguePanel.SetActive(true);
 
@@ -161,6 +164,13 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         currentDialogueLines = null;
         currentLineIndex = 0;
+
+        // Invoke the callback if we have one
+        if (onDialogueEnd != null)
+        {
+            onDialogueEnd.Invoke();
+            onDialogueEnd = null;
+        }
     }
 
     /// <summary>
