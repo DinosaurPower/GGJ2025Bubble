@@ -20,6 +20,8 @@ public class BetGame : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI scoreCardsText;
     public TextMeshProUGUI enemyCardValueText;
+    public TextMeshProUGUI playerPointText;
+    public TextMeshProUGUI enemyPointText;
 
 
     void Start()
@@ -110,6 +112,8 @@ public class BetGame : MonoBehaviour
         }
 
         Debug.Log($"Scores -> Player: {playerScore}, Computer: {computerScore}");
+        playerPointText.text = "Your Point:" + playerScore;
+        enemyPointText.text = "Their Point:" + computerScore;
 
         currentRound++;
         StartNewRound();
