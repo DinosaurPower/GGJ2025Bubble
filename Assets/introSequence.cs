@@ -5,6 +5,9 @@ using UnityEngine;
 public class introSequence : MonoBehaviour
 {
     public Dialogue introDialogue;
+    public Dialogue supportDialogue;
+
+    public Dialogue outroDialogue;
     public DialogueManager dialogueManager;
     // Start is called before the first frame update
     void Start()
@@ -17,4 +20,9 @@ public class introSequence : MonoBehaviour
     {
         
     }
+
+    public void SecondDialogue(){
+        dialogueManager.StartDialogue(supportDialogue); 
+    }
+   
 }

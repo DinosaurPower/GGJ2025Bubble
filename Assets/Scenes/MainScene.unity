@@ -1730,6 +1730,14 @@ MonoBehaviour:
     - 'Remember fam: like and subscribe if you haven''t done so yet!'
     - And now, message from our sponsor....
     characterImage: {fileID: 21300000, guid: 31da4b89ffecf4c189e9b3608a245c65, type: 3}
+  supportDialogue:
+    lines:
+    - ...
+    - That was weird.
+    characterImage: {fileID: 21300000, guid: b87cde82e88bf468288957f8f4872825, type: 3}
+  outroDialogue:
+    lines: []
+    characterImage: {fileID: 0}
   dialogueManager: {fileID: 8582800530292604741}
 --- !u!4 &842087405
 Transform:
