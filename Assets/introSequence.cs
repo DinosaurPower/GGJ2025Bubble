@@ -12,17 +12,12 @@ public class introSequence : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       dialogueManager.StartDialogue(introDialogue); 
+       dialogueManager.StartDialogue(introDialogue, ()=>
+       {
+            dialogueManager.StartDialogue(supportDialogue); 
+       }); 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SecondDialogue(){
-        dialogueManager.StartDialogue(supportDialogue); 
-    }
+   
    
 }
